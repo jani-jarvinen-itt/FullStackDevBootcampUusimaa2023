@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function handleButtonClick() {
+            alert("Button has been clicked!");
+
+            // won't work, Node.js required
+            /*
+            const fs = require('node:fs');
+            const fileData = fs.readFileSync("Hello.txt", "utf8");
+            console.log(fileData);
+            */
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <p>Some text goes here...</p>
+    <button onclick="handleButtonClick()">Click me!</button>
+</body>
+
+</html>
