@@ -1,0 +1,13 @@
+Guess the number game algorithm:
+
+1. Select random number 1-20.
+
+2. Ask the player for a guess.
+
+3. Is the guess correct?
+   - Correct: player wins, end game.
+   - Different: display if larger or smaller than the correct one.
+
+4. Loop steps 2 and 3, if there are still guesses available.
+
+5. Out of guesses, computer wins.
