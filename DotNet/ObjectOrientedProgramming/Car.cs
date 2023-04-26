@@ -5,7 +5,7 @@ public class Car
 
     public string Make { get; set; }
 
-    public int CurrentSpeed { get; set; }
+    public int CurrentSpeed { get; }
 
-    public bool EngineRunning { get; set; }
+    public bool EngineRunning { get; }
 }
