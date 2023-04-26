@@ -29,3 +29,7 @@ for (int round = 0; round < 3; round++)
 }
 
 Console.WriteLine("Game ends.");
+
+// high score display
+HighScoreHandler highScore = new();
+highScore.DisplayHighScoreList();
