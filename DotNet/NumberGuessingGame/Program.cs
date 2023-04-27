@@ -5,6 +5,7 @@ int correct = Random.Shared.Next(1, 21);
 Console.WriteLine(correct);
 
 // they plays has three guesses/rounds
+HighScoreHandler highScore = new();
 for (int round = 0; round < 3; round++)
 {
     // ask the player for a guess
@@ -16,6 +17,7 @@ for (int round = 0; round < 3; round++)
     if (guess == correct)
     {
         Console.WriteLine("Correct! You win the game!");
+        highScore.RecordPlayerScore(round + 1);
         break;
     }
     else if (guess < correct)
@@ -31,5 +33,4 @@ for (int round = 0; round < 3; round++)
 Console.WriteLine("Game ends.");
 
 // high score display
-HighScoreHandler highScore = new();
 highScore.DisplayHighScoreList();
