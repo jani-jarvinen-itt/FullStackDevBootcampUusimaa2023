@@ -11,3 +11,17 @@ DateTime secondDate = DateTime.Parse(date2Input);
 
 Console.WriteLine(firstDate);
 Console.WriteLine(secondDate);
+Console.WriteLine("--------");
+
+// calculate and show the difference in the dates
+TimeSpan diff = secondDate - firstDate;
+Console.WriteLine(diff);
+
+int days = diff.Days;
+int hours = diff.Hours;
+int min = diff.Minutes;
+string diffValue = $"Date difference is {days} day(s), " +
+                   $"{hours} hour(s) and {min} minute(s).";
+Console.WriteLine(diffValue);
+
+Console.WriteLine("Total difference in hours: " + diff.TotalHours);
