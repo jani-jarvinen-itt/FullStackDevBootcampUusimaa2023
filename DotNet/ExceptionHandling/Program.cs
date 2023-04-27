@@ -32,8 +32,15 @@ try
     decimal result = number1 / number2;
     Console.WriteLine(result);
 }
-catch
+catch (DivideByZeroException)
 {
-    // bad strategy to error handling
-    Console.WriteLine("An error occurred!");
+    Console.WriteLine("Cannot divide by zero. Please try again.");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Invalid number entered. Please enter valid decimal numbers.");
+}
+catch (Exception ex)
+{
+    Console.WriteLine("An unexpected error occurred! " + ex.Message);
 }
