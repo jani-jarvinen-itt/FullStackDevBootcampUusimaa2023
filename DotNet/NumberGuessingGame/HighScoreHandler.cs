@@ -5,7 +5,9 @@ public class HighScoreHandler
     {
         string filename = @"C:\Bootcamp\Uusimaa\Code\DotNet\NumberGuessingGame\HighScores.csv";
 
-        IEnumerable<string> lines = File.ReadLines(filename);
+        string[] lines = File.ReadAllLines(filename);
+        Array.Sort(lines);
+
         int counter = 1;
         foreach (string line in lines)
         {
