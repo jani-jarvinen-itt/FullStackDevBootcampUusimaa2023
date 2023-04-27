@@ -11,19 +11,7 @@ Console.WriteLine(firstDate.ToString(enUs));
 // ask the user for two dates
 DateReader reader = new();
 DateTime firstDate = reader.ReadADate();
-
-Console.WriteLine("Please enter the second date:");
-string date2Input = Console.ReadLine();
-
-DateTime secondDate = default;
-try
-{
-    secondDate = DateTime.Parse(date2Input);
-}
-catch
-{
-    Console.WriteLine("The date you entered was invalid. Please use the format 'd.m.yyyy hh.mm'.");
-}
+DateTime secondDate = reader.ReadADate();
 
 Console.WriteLine(firstDate);
 Console.WriteLine(secondDate);
