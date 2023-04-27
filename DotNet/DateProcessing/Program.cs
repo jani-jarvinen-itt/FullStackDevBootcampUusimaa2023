@@ -1,13 +1,29 @@
-﻿// ask the user for two dates
+﻿/*
+using System.Globalization;
+CultureInfo enUs = new("en-US");
 Console.WriteLine("Please enter the first date:");
 string date1Input = Console.ReadLine();
+DateTime firstDate = DateTime.Parse(date1Input, enUs);
+Console.WriteLine(firstDate);
+Console.WriteLine(firstDate.ToString(enUs));
+*/
+
+// ask the user for two dates
+DateReader reader = new();
+DateTime firstDate = reader.ReadADate();
 
 Console.WriteLine("Please enter the second date:");
 string date2Input = Console.ReadLine();
 
-// convert the input strings to DateTimes
-DateTime firstDate = DateTime.Parse(date1Input);
-DateTime secondDate = DateTime.Parse(date2Input);
+DateTime secondDate = default;
+try
+{
+    secondDate = DateTime.Parse(date2Input);
+}
+catch
+{
+    Console.WriteLine("The date you entered was invalid. Please use the format 'd.m.yyyy hh.mm'.");
+}
 
 Console.WriteLine(firstDate);
 Console.WriteLine(secondDate);
