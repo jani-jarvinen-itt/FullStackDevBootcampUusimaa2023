@@ -2,6 +2,22 @@
     ViewData["Title"] = "Home Page";
 }
 
+@section Scripts
+{
+    <script>
+        function handleButtonClick() {
+            console.log("Button has been clicked!");
+
+            // read the user's input and calculate the sum
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+
+            const sum = parseInt(num1) + parseInt(num2);
+            alert("The sum of the two numbers is: " + sum);
+        }
+    </script>
+}
+
 <div class="text-center">
     <h1 class="display-4">My Simple Calculator</h1>
 
