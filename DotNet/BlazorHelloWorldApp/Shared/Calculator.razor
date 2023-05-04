@@ -1,16 +1,18 @@
-<p><input type="number" /></p>
-<p><input type="number" /></p>
+<p><input type="number" @bind="number1" /></p>
+<p><input type="number" @bind="number2" /></p>
 
 <button @onclick="CalculateSum">Sum</button>
 
 <h4>@calculationResult</h4>
 
 @code {
+    private string number1 = "";
+    private string number2 = "";
     private string calculationResult = "(not set)";
 
     private void CalculateSum()
     {
-        // TODO: do a real calculation
-        calculationResult = "1234";
+        int sum = int.Parse(number1) + int.Parse(number2);
+        calculationResult = sum.ToString();
     }
 }
