@@ -1,4 +1,16 @@
 <p><input type="number" /></p>
 <p><input type="number" /></p>
 
-<button>Sum</button>
+<button @onclick="CalculateSum">Sum</button>
+
+<h4>@calculationResult</h4>
+
+@code {
+    private string calculationResult = "(not set)";
+
+    private void CalculateSum()
+    {
+        // TODO: do a real calculation
+        calculationResult = "1234";
+    }
+}
