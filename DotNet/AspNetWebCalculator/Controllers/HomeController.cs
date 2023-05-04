@@ -23,6 +23,16 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult MyNewPage()
+    {
+        return View();
+    }
+
+    public string SayHello()
+    {
+        return "Hello World!";
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
