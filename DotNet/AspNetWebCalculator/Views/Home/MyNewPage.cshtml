@@ -1,2 +1,12 @@
 <h1>This is my new page!</h1>
 <p>Some normal text goes here...</p>
+
+<ul>
+@{
+    // any C# code here
+    for (int i = 1; i <= 10; i++)
+    {
+        <li>Number @i</li>
+    }
+}
+</ul>
