@@ -1,14 +1,14 @@
-<p><input type="number" @bind="number1" /></p>
-<p><input type="number" @bind="number2" /></p>
+<p><input type="number" @bind="number1" class="form-control w-25" /></p>
+<p><input type="number" @bind="number2" class="form-control w-25" /></p>
 
-<button @onclick="CalculateSum">Sum</button>
+<button @onclick="CalculateSum" class="btn btn-primary">Sum</button>
 
-<h4>@calculationResult</h4>
+<h4 class="mt-3">@calculationResult</h4>
 
 @code {
     private string number1 = "";
     private string number2 = "";
-    private string calculationResult = "(not set)";
+    private string calculationResult = "0";
 
     private void CalculateSum()
     {
