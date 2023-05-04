@@ -20,3 +20,6 @@ DotNet/ExceptionHandling/obj
 DotNet/AspNetWebCalculator/.vscode
 DotNet/AspNetWebCalculator/bin
 DotNet/AspNetWebCalculator/obj
+DotNet/BlazorHelloWorldApp/.vscode
+DotNet/BlazorHelloWorldApp/bin
+DotNet/BlazorHelloWorldApp/obj
