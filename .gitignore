@@ -23,3 +23,7 @@ DotNet/AspNetWebCalculator/obj
 DotNet/BlazorHelloWorldApp/.vscode
 DotNet/BlazorHelloWorldApp/bin
 DotNet/BlazorHelloWorldApp/obj
+/DotNet/LinqDemo/obj
+/DotNet/LinqDemo2/.vs/LinqDemo2
+/DotNet/LinqDemo2/LinqDemo2/bin/Debug/net7.0
+/DotNet/LinqDemo2/LinqDemo2/obj
