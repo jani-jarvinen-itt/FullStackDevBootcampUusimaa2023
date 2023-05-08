@@ -27,3 +27,7 @@ DotNet/BlazorHelloWorldApp/obj
 /DotNet/LinqDemo2/.vs/LinqDemo2
 /DotNet/LinqDemo2/LinqDemo2/bin/Debug/net7.0
 /DotNet/LinqDemo2/LinqDemo2/obj
+/JavaScript/node_modules
+DotNet/LinqDemo/.vscode
+DotNet/LinqDemo2/.vs
+JavaScript/package-lock.json
