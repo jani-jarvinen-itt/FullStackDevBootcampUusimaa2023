@@ -1,9 +1,35 @@
+// preparation for reading a SQLite database and the command-line
 const sqlite3 = require('sqlite3');
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+// define where the SQLite database exists
 const db = new sqlite3.Database('../Databases/northwind.db');
 
-listFinnishCustomers();
-listLondonEmployees();
-listTofuSales();
+readline.question(`Please select your choice:
+
+1. List Finnish customers
+2. List London employees
+3. List Tofu sales.
+
+Please enter your choice (1-3): `, choice => {
+    console.log(`You selected choice ${choice}.`);
+    readline.close();
+
+    switch (choice) {
+        case "1":
+            listFinnishCustomers();
+            break;
+        case "2":
+            listLondonEmployees();
+            break;
+        case "3":
+            listTofuSales();
+            break;
+    }
+});
 
 function listFinnishCustomers() {
     const sql = "SELECT * FROM Customers WHERE Country = 'Finland'";
