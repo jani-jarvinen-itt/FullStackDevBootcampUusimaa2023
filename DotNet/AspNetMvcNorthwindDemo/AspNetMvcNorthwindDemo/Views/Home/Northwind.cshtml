@@ -1,7 +1,12 @@
-﻿@{
+﻿@model List<string>
+@{
     ViewData["Title"] = "Northwind Demo";
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>The list of Finnish customers appears below.</p>
 
+@foreach (string companyName in Model)
+{
+    <h4>@companyName</h4>
+}

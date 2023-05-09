@@ -1,4 +1,5 @@
-﻿using AspNetMvcNorthwindDemo.Models;
+﻿using AspNetMvcNorthwindDemo.Database;
+using AspNetMvcNorthwindDemo.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -25,7 +26,12 @@ namespace AspNetMvcNorthwindDemo.Controllers
 
         public IActionResult Northwind()
         {
-            return View();
+            // database access
+            NorthwindDataAccess access = new();
+            List<string> customers = access.GetFinnishCustomers();
+
+            // return the view
+            return View(customers);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
