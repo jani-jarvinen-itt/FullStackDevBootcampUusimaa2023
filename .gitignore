@@ -31,3 +31,6 @@ DotNet/BlazorHelloWorldApp/obj
 DotNet/LinqDemo/.vscode
 DotNet/LinqDemo2/.vs
 JavaScript/package-lock.json
+/DotNet/NorthwindSqlDemo/.vs/NorthwindSqlDemo
+/DotNet/NorthwindSqlDemo/NorthwindSqlDemo/bin/Debug/net7.0
+/DotNet/NorthwindSqlDemo/NorthwindSqlDemo/obj
