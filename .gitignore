@@ -38,3 +38,6 @@ JavaScript/package-lock.json
 /DotNet/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/bin/Debug/net7.0
 /DotNet/AspNetMvcNorthwindDemo/AspNetMvcNorthwindDemo/obj
 /DotNet/NorthwindSqlDemo/.vs/ProjectEvaluation
+DotNet/AzureBlobStorageDemo/.vscode
+DotNet/AzureBlobStorageDemo/obj
+DotNet/AzureBlobStorageDemo/bin
