@@ -1,5 +1,7 @@
 using System.Data.SqlClient;
 
+namespace NorthwindHttpApi.Databases;
+
 public class NorthwindDataAccess
 {
     public List<string> GetAllCustomers()
