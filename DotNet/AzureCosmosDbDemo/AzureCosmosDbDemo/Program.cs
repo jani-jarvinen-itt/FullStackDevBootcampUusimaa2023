@@ -26,7 +26,7 @@ CustomerData customer = new()
 {
     id = "my-first-customer",
     CustomerName = "My First Customer Inc.",
-    EmailAddress = "info@fistcustomer.com",
+    EmailAddress = "info@firstcustomer.com",
     PhoneNumber = "123 456 789"
 };
 
