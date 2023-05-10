@@ -46,3 +46,6 @@ DotNet/AzureBlobStorageDemo/bin
 /DotNet/AzureCosmosDbDemo/.vs/AzureCosmosDbDemo
 /DotNet/AzureCosmosDbDemo/AzureCosmosDbDemo/bin/Debug/net7.0
 /DotNet/AzureCosmosDbDemo/AzureCosmosDbDemo/obj
+DotNet/SimpleHttpApiDemo/.vscode
+DotNet/SimpleHttpApiDemo/bin
+DotNet/SimpleHttpApiDemo/obj
