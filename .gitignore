@@ -41,3 +41,8 @@ JavaScript/package-lock.json
 DotNet/AzureBlobStorageDemo/.vscode
 DotNet/AzureBlobStorageDemo/obj
 DotNet/AzureBlobStorageDemo/bin
+/DotNet/AspNetMvcNorthwindDemo/.vs/ProjectEvaluation
+/DotNet/AzureBlobStorageDemo/.vs
+/DotNet/AzureCosmosDbDemo/.vs/AzureCosmosDbDemo
+/DotNet/AzureCosmosDbDemo/AzureCosmosDbDemo/bin/Debug/net7.0
+/DotNet/AzureCosmosDbDemo/AzureCosmosDbDemo/obj
