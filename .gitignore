@@ -49,3 +49,6 @@ DotNet/AzureBlobStorageDemo/bin
 DotNet/SimpleHttpApiDemo/.vscode
 DotNet/SimpleHttpApiDemo/bin
 DotNet/SimpleHttpApiDemo/obj
+DotNet/NorthwindHttpApi/.vscode
+DotNet/NorthwindHttpApi/bin
+DotNet/NorthwindHttpApi/obj
