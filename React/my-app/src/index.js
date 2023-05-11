@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import MyFirstComponent from './MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
+import UserList from './UserList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +13,7 @@ root.render(
     <MyFirstComponent />
     <MyFirstComponent />
     <MyFirstComponent />
+    <UserList />
   </React.StrictMode>
 );
 
