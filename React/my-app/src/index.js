@@ -5,10 +5,12 @@ import App from './App';
 import MyFirstComponent from './MyFirstComponent';
 import reportWebVitals from './reportWebVitals';
 import UserList from './UserList';
+import NorthwindCustomerList from './NorthwindCustomerList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <NorthwindCustomerList />
     <App />
     <MyFirstComponent />
     <MyFirstComponent />
