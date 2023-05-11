@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fetch Demo using JSONPlaceholder API</title>
+</head>
+
+<body onload="onPageLoad()">
+    <h1>Fetch Demo using JSONPlaceholder API</h1>
+
+    <pre id="results"></pre>
+
+    <script>
+        function onPageLoad() {
+            console.log("Starting to fetch user data...");
+
+            fetch('https://jsonplaceholder.typicode.com/users')
+                .then(response => response.json())
+                .then(json => console.log(json));
+        }
+    </script>
+</body>
+
+</html>
