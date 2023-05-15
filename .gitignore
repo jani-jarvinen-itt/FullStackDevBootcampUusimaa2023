@@ -55,3 +55,7 @@ DotNet/NorthwindHttpApi/obj
 React/my-app/package-lock.json
 DotNet/AzureCosmosDbDemo/.vs
 .vscode/
+Python/HelloFlask/__pycache__/App.cpython-311.pyc
+DotNet/NorthwindHttpApi/.vs
+DotNet/NorthwindHttpApi/NorthwindHttpApi.csproj.user
+Python/NumberGame/__pycache__/app.cpython-311.pyc
