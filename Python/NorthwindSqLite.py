@@ -6,7 +6,7 @@ def list_finnish_customer(con):
 
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        print(row[0])
 
 
 print("Starting to access the Northwind sample SQLite database.")
