@@ -34,4 +34,5 @@ def list_customer():
         }
         all_customer.append(customer_dict)
 
+    con.close()
     return jsonify(all_customer)
